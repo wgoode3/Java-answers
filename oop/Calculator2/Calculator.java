@@ -42,37 +42,31 @@ public class Calculator {
 		if(register.get(register.size()-1) != "="){
 			System.out.println("Invalid sequence!");
 		} else {
+			// check multiplication or division first
 			int i = 0;
 			while (register.get(i+1) != "="){
+				Double a = (Double) register.get(i);
+				Double b = (Double) register.get(i+2);
 				if(register.get(i+1) == "*"){
-					Double a = (Double) register.get(i);
-					Double b = (Double) register.get(i+2);
 					register.set(i, a*b);
-					register.remove(i+1);
-					register.remove(i+1);
 				}else if(register.get(i+1) == "/"){
-					Double a = (Double) register.get(i);
-					Double b = (Double) register.get(i+2);
 					register.set(i, a/b);
-					register.remove(i+1);
-					register.remove(i+1);
 				}
+				register.remove(i+1);
+				register.remove(i+1);
 				i += 2;
 			}
+			// finish with addition and subtraction
 			while (register.get(1) != "="){
+				Double a = (Double) register.get(0);
+				Double b = (Double) register.get(2);
 				if(register.get(1) == "+"){
-					Double a = (Double) register.get(0);
-					Double b = (Double) register.get(2);
 					register.set(0, a+b);
-					register.remove(1);
-					register.remove(1);
 				}else if(register.get(1) == "-"){
-					Double a = (Double) register.get(0);
-					Double b = (Double) register.get(2);
 					register.set(0, a-b);
-					register.remove(1);
-					register.remove(1);
 				}
+				register.remove(1);
+				register.remove(1);
 			}
 			System.out.println(register.get(0));
 		}
