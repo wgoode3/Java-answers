@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<breakfastMenu>
+    <item category="entree">
+        <name>Bagel with creamcheese</name>
+        <description>A toasted bagel with creamcheese spread on both halves</description>
+        <price>$3.99</price>
+    </item>
+    <item category="entree">
+        <name>French Toast</name>
+        <description>3 slices of challah bread French Toast sprinkled with powdered sugar, served with butter and 100% pure maple syrup</description>
+        <price>$7.99</price>
+    </item>
+    <item category="beverage">
+        <name>Orange Juice</name>
+        <description>A juice made with oranges</description>
+        <price>$1.49</price>
+    </item>
+</breakfastMenu>
+
+<lunchMenu>
+    <item category="entree">
+        <name>Chicken Salad</name>
+        <description>A salad with chicken</description>
+        <price>$10.99</price>
+    </item>
+    <item category="entree">
+        <name>Pastrami Sandwich</name>
+        <description>A sandwich made with pastrami</description>
+        <price>$13.99</price>
+    </item>
+    <item category="beverage">
+        <name>Coca-Cola</name>
+        <description>A fizzy cola soda</description>
+        <price>$1.49</price>
+    </item>
+</lunchMenu>
+
+<dinnerMenu>
+    <item category="entree">
+        <name>Sirloin Steak</name>
+        <description>Seared Sirloin with avacado and roast cherry tomatoes</description>
+        <price>$14.99</price>
+    </item>
+    <item category="entree">
+        <name>Herb crusted Salmon</name>
+        <description>Atlantic Salmon with a feta lemon zest, parsley and dill crust</description>
+        <price>$16.99</price>
+    </item>
+    <item category="beverage">
+        <name>Beer</name>
+        <description>A locally brewed Ale</description>
+        <price>$3.99</price>
+    </item>
+</dinnerMenu>
