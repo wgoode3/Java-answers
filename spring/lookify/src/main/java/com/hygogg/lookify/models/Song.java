@@ -21,17 +21,21 @@ public class Song {
 	@Size(min = 5)
 	private String artist;
 	
+	@Size(min = 15)
+	private String url;
+
 	@Min(1)
-	@Max(10)
+	@Max(5)
 	private Integer rating;
 	
 	public Song() {
 	}
 	
-	public Song(String title, String artist, Integer rating) {
+	public Song(String title, String artist, Integer rating, String url) {
 		this.title = title;
 		this.artist = artist;
 		this.rating = rating;
+		this.url = url;
 	}
 
 	public Long getId() {
@@ -64,6 +68,14 @@ public class Song {
 
 	public void setRating(Integer rating) {
 		this.rating = rating;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getUrl() {
+		return this.url;
 	}
 
 }

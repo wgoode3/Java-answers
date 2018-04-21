@@ -1,0 +1,55 @@
+body {
+	font-family: arial, sans-serif;
+}
+		
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+		
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+	width: 1060px;
+	margin: 0 auto;
+}
+		
+td, th {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 8px;
+}
+		
+tr:nth-child(even) {
+	background-color: #ddd;
+}
+		
+.col {
+	width: 500px;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 200px;
+}
+		
+.box {
+	padding: 3px;
+	margin-left: 5px;
+	border: 1px solid #000;
+	background-color: #eee;
+}
+		
+.answer {
+	margin-left: -20px;
+	border-bottom: 1px solid #999;
+}
+		
+.answer:last-child {
+	border-bottom: none;
+}
+		
+pre {
+	white-space: pre-wrap;
+}
